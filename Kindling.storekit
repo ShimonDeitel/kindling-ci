@@ -1,0 +1,29 @@
+{
+  "identifier" : "kindling",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "kindling_pro_unlock",
+      "localizations" : [
+        {
+          "description" : "Unlocks unlimited nightly gratitude entries",
+          "displayName" : "Kindling Pro",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "kindling_pro_unlock",
+      "referenceName" : "Kindling Pro Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false
+  },
+  "subscriptionGroups" : [],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
