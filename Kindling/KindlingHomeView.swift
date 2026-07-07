@@ -176,9 +176,7 @@ struct EntryRow: View {
                         .foregroundStyle(KDTheme.lavender)
                         .frame(width: 32, height: 32)
                 }
-                .accessibilityElement(children: .ignore)
                 .accessibilityIdentifier("entryMenu_\(entry.id)")
-                .accessibilityAddTraits(.isButton)
                 .contentShape(Rectangle())
             }
             ForEach([entry.thingOne, entry.thingTwo, entry.thingThree].filter { !$0.isEmpty }, id: \.self) { thing in
