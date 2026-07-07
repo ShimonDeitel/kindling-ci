@@ -74,11 +74,9 @@ struct EntryFormView: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }
-                        .buttonStyle(.plain)
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") { save() }
-                        .buttonStyle(.plain)
                         .accessibilityIdentifier("saveEntryButton")
                 }
             }
