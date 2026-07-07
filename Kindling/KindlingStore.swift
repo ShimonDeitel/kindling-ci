@@ -10,6 +10,9 @@ final class KindlingStore: ObservableObject {
     init(fileName: String = "kindling_entries.json") {
         let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         fileURL = dir.appendingPathComponent(fileName)
+        if ProcessInfo.processInfo.arguments.contains("-uiTestReset") {
+            try? FileManager.default.removeItem(at: fileURL)
+        }
         load()
     }
 
