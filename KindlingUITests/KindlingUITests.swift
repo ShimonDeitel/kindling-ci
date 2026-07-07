@@ -21,7 +21,9 @@ final class KindlingUITests: XCTestCase {
             field.tap()
             field.typeText("Good sunshine")
         }
-        app.buttons["saveEntryButton"].tap()
+        let saveButton1 = app.buttons["saveEntryButton"]
+        XCTAssertTrue(saveButton1.waitForExistence(timeout: 8), "Save button did not appear")
+        saveButton1.tap()
         XCTAssertTrue(app.navigationBars["Kindling"].waitForExistence(timeout: 5))
     }
 
@@ -91,6 +93,8 @@ final class KindlingUITests: XCTestCase {
             field.tap()
             field.typeText("Seed thing")
         }
-        app.buttons["saveEntryButton"].tap()
+        let saveButton = app.buttons["saveEntryButton"]
+        XCTAssertTrue(saveButton.waitForExistence(timeout: 8), "Save button did not appear")
+        saveButton.tap()
     }
 }
